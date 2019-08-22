@@ -50,10 +50,9 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  new_array = source_array.map{|e| !!e}
   counter = 0
-  while new_array[counter] do 
-    if new_array[counter] == false
+  while source_array[counter] do 
+    if source_array[counter] == false
       return false
     end
     counter += 1 
